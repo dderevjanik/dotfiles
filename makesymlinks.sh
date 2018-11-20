@@ -9,7 +9,7 @@
 scriptDir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 dir=dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="tmux.conf"    # list of files/folders to symlink in homedir
+files="tmux.conf gitconfig alliases"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -25,7 +25,7 @@ echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
-    echo "Moving any existing file from ~/.$file to ~/$olddir"
+    echo "Moving existing file from ~/.$file to ~/$olddir"
     mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink $scriptDir/$dir/$file to ~/"
     ln -s $scriptDir/$dir/.$file ~/.$file
