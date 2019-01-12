@@ -9,7 +9,7 @@
 scriptDir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 dir=dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="tmux.conf gitconfig alliases"    # list of files/folders to symlink in homedir
+files="tmux.conf gitconfig alliases dircolors"    # list of files/folders to symlink in homedir
 
 ##########
 
