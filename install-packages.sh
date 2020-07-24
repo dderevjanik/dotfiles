@@ -18,6 +18,14 @@ else
   echo 'omf is already installed'
 fi
 
+if ! [ -x "$(command -v deborphan)" ]; then
+  echo -e '\e[95mInstalling deborphan - removing orphaned libraries'
+  echo -e "\e[39m"
+  sudo apt-get install -y deborphan
+else
+  echo 'omf is already installed'
+fi
+
 if ! [ -x "$(command -v docker)" ]; then
   echo -e '\e[95mInstalling docker'
   echo -e "\e[39m"
@@ -61,14 +69,6 @@ if ! [ -x "$(command -v unrar)" ]; then
   sudo apt-get install unrar
 else
   echo -e 'unrar is already installed'
-fi
-
-if ! [ -x "$(command -v htop)" ]; then
-  echo -e '\e[95mInstalling htop'
-  echo -e "\e[39mDefault"
-  sudo apt-get install htop
-else
-  echo -e 'htop is already installed'
 fi
 
 if ! [ -x "$(command -v powertop)" ]; then
