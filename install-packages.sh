@@ -71,6 +71,14 @@ else
   echo -e 'unrar is already installed'
 fi
 
+if ! [ -x "$(command -v htop)" ]; then
+  echo -e '\e[95mInstalling htop'
+  echo -e "\e[39mDefault"
+  sudo apt-get install htop
+else
+  echo -e 'htop is already installed'
+fi
+
 if ! [ -x "$(command -v powertop)" ]; then
   echo -e '\e[95mInstalling powertop'
   echo -e "\e[39mDefault"
