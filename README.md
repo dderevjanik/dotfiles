@@ -1,5 +1,9 @@
 # Dotfiles
 
+## Scripts
+
+### `install-packages.sh`
+
 ## ~/
 
 - [.alliases](https://github.com/dderevjanik/dotfiles/blob/master/dotfiles/.alliases)

@@ -23,7 +23,7 @@ if ! [ -x "$(command -v deborphan)" ]; then
   echo -e "\e[39m"
   sudo apt-get install -y deborphan
 else
-  echo 'omf is already installed'
+  echo 'deborphan is already installed'
 fi
 
 if ! [ -x "$(command -v docker)" ]; then
