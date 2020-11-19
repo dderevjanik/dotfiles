@@ -4,6 +4,12 @@
 
 ### `install-packages.sh`
 
+- fish
+- deborphan
+- docker
+- docker-compose
+
+
 ## ~/
 
 - [.alliases](https://github.com/dderevjanik/dotfiles/blob/master/dotfiles/.alliases)

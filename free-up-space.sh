@@ -25,3 +25,6 @@ snap list --all | awk '/disabled/{print $1, $3}' |
 while read snapname revision; do
     snap remove "$snapname" --revision="$revision"
 done;
+
+echo "=== 7. Manually clean up ~/.cache ==="
+echo "=== 8. Manually remove old software"
